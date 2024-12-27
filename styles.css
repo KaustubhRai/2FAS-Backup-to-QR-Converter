@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+  
+  #drop-area.dragover {
+    border-color: #333;
+  }
+  
+  #file-select-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #file-select-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #qr-codes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .qr-item {
+    text-align: center;
+  }
+  
+  .qr-item canvas {
+    margin-bottom: 10px;
+  }
+  
+  .service-name {
+    font-weight: bold;
+  }
+
+  /* Loading Indicator Styles */
+  #loading {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .qr-item {
+      width: 100%;
+    }
+  
+    #drop-area {
+      padding: 20px;
+    }
+  
+    #file-select-button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  .description {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description p {
+    margin: 0 0 10px;
+  }
+  
+  .description strong {
+    color: #007BFF;
+  }

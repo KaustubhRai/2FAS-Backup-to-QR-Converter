@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2FAS Backup to QR Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <!-- Optional: Add Favicon to Prevent 404 -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>2FAS Backup to QR Converter</h1>
+    <div id="drop-area">
+      <p>Drag & Drop your .2fas file here or <button id="file-select-button" aria-label="Select .2fas file">Select File</button>
+    </p>
+      <input type="file" id="file-input" accept=".2fas" hidden>
+    </div>
+    <p class="description">
+      Upload your 2FAS backup files to convert them back into QR codes. This allows you to easily import them into another 2FA app.
+    </p>
+    <!-- Loading Indicator -->
+    <div id="loading" style="display: none;">Processing...</div>
+    <div id="qr-codes"></div>
+  </div>
+
+  <!-- Include QRious library via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js" integrity="sha512-pUhApVQtLbnpLtJn6DuzDD5o2xtmLJnJ7oBoMsBnzOkVkpqofGLGPaBJ6ayD2zQe3lCgCibhJBi4cj5wAxwVKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.obfuscated.js"></script>
+</body>
+</html>
